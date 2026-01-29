@@ -5,37 +5,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>《云上征途》技术支持</title>
   <meta name="robots" content="noindex,nofollow" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #6b7280;
+      --card: #f8fafc;
+      --border: #e5e7eb;
+      --link: #2563eb;
+      --link-hover: #1d4ed8;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f14;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --card: #0f172a;
+        --border: #1f2937;
+        --link: #60a5fa;
+        --link-hover: #93c5fd;
+        --shadow: none;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      text-underline-offset: 3px;
+    }
+    a:hover, a:focus-visible { color: var(--link-hover); text-decoration: underline; }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+    }
+
+    header {
+      padding: 20px 0 10px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+    }
+
+    h2 {
+      margin: 22px 0 10px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    p { margin: 10px 0; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    li { margin: 6px 0; word-break: break-word; }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: var(--border);
+      margin: 18px 0 12px;
+    }
+
+    footer {
+      font-size: 12px;
+      color: var(--muted);
+      padding: 6px 0 18px;
+    }
+
+    @media (max-width: 420px) {
+      h1 { font-size: 22px; }
+      h2 { font-size: 16px; }
+      .card { padding: 14px; border-radius: 12px; }
+      .wrap { padding-top: max(16px, env(safe-area-inset-top)); }
+    }
+  </style>
 </head>
 
-<body style="max-width:900px;margin:40px auto;padding:0 16px;line-height:1.7;font-family:Arial,Helvetica,'PingFang SC','Microsoft YaHei',sans-serif;">
-  <h1>《云上征途》技术支持</h1>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>《云上征途》技术支持</h1>
+    </header>
 
-  <p>感谢您使用《云上征途》。如您在游戏过程中遇到问题（包括但不限于：游戏异常、账号问题、充值问题、功能建议与反馈等），请通过以下方式联系我们，我们将尽快协助处理。</p>
+    <div class="card">
+      <p>感谢您使用《云上征途》。如您在游戏过程中遇到问题（包括但不限于：游戏异常、账号问题、充值问题、功能建议与反馈等），请通过以下方式联系我们，我们将尽快协助处理。</p>
 
-  <h2>联系我们</h2>
-  <ul>
-    <li>客服邮箱：<a href="mailto:pingce@dxyx6888.com">pingce@dxyx6888.com</a></li>
-    <li>客服 QQ：895528575</li>
-    <li>微信公众号：大熊游戏（微信内搜索“<b>大熊游戏</b>”）</li>
-  </ul>
+      <h2>联系我们</h2>
+      <ul>
+        <li>客服邮箱：<a href="mailto:pingce@dxyx6888.com">pingce@dxyx6888.com</a></li>
+        <li>客服 QQ：895528575</li>
+        <li>微信公众号：大熊游戏（微信内搜索“<b>大熊游戏</b>”）</li>
+      </ul>
 
-  <h2>工作时间</h2>
-  <p>周一至周五 10:00 - 18:00（GMT+8），节假日顺延处理。</p>
+      <h2>工作时间</h2>
+      <p>周一至周五 10:00 - 18:00（GMT+8），节假日顺延处理。</p>
 
-  <h2>公司信息</h2>
-  <p>公司地址：广东省广州市天河区南方证券大厦</p>
+      <h2>公司信息</h2>
+      <p>公司地址：广东省广州市天河区南方证券大厦</p>
 
-  <h2>提交问题建议包含</h2>
-  <ul>
-    <li>设备型号、iOS 版本</li>
-    <li>问题描述（可附截图/录屏）</li>
-    <li>发生时间与账号信息（如有）</li>
-  </ul>
+      <h2>提交问题建议包含</h2>
+      <ul>
+        <li>设备型号、iOS 版本</li>
+        <li>问题描述（可附截图/录屏）</li>
+        <li>发生时间与账号信息（如有）</li>
+      </ul>
 
-  <h2>隐私说明</h2>
-  <p>我们重视并保护用户隐私，仅在处理您反馈问题所必需的范围内使用您提供的信息。</p>
+      <h2>隐私说明</h2>
+      <p>我们重视并保护用户隐私，仅在处理您反馈问题所必需的范围内使用您提供的信息。</p>
 
-  <hr />
-  <p style="font-size:12px;color:#666;">本页面用于《云上征途》App 的技术支持与用户反馈渠道公示。</p>
+      <hr />
+      <footer>本页面用于《云上征途》App 的技术支持与用户反馈渠道公示。</footer>
+    </div>
+  </div>
 </body>
 </html>
